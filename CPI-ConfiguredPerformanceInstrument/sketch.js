@@ -194,15 +194,15 @@ function setup() {
   for (let i = 0; i < longMemoryArray.length; i++) volLong[i] = 1.0; //vol
 
   // create perception objects
-  for (let i = 0; i < imagePerception.length; i++) {
-    let perc = new perception(
-      random(width),
-      random(height),
-      imagePerception[i],
-      random(80, 300)
-    );
-    perceptionsArray.push(perc);
-  }
+  // for (let i = 0; i < imagePerception.length; i++) {
+  //   let perc = new perception(
+  //     random(width),
+  //     random(height),
+  //     imagePerception[i],
+  //     random(80, 300)
+  //   );
+  //   perceptionsArray.push(perc);
+  // }
 
   // manual volume sensoryMemory
   volSensory[0] = 0;
