@@ -110,7 +110,7 @@ function preload() {
     audioLongMemory[i] = loadSound(
       "AudioAssets/" + audioFileLongMemory[i],
       () => console.log("true:", audioFileLongMemory[i]),
-      () => console.error("false:", audioFileLongMemory[i])
+      () => console.error("false:", audioFileLongMemory[i]),
     );
   }
 
@@ -122,13 +122,13 @@ function preload() {
     imageSensoryMemory[i] = loadImage(
       imgPath,
       () => console.log("IMG OK", i, imgPath),
-      () => console.error("IMG FAIL", i, imgPath)
+      () => console.error("IMG FAIL", i, imgPath),
     );
 
     audioSensoryMemory[i] = loadSound(
       audPath,
       () => console.log("AUD OK", i, audPath),
-      () => console.error("AUD FAIL", i, audPath)
+      () => console.error("AUD FAIL", i, audPath),
     );
   }
 
@@ -168,7 +168,7 @@ function setup() {
       random(-2, 2),
       imageSensoryMemory[i],
       audioSensoryMemory[i],
-      120
+      120,
     );
     sens.id = i;
     sensoryMemoryArray.push(sens);
@@ -185,7 +185,7 @@ function setup() {
       random(-2, 2),
       imageLongMemory[i],
       audioLongMemory[i],
-      random(70, 120)
+      random(70, 120),
     );
     mem.sound.loop();
     mem.sound.pause();
@@ -318,18 +318,18 @@ function draw() {
   drawVolumeSliders();
   function drawVolumeSliders() {
     push();
-    textSize(10);
+    textSize(1);
     noStroke();
 
-    // Sensory
-    fill(255,0,0,80);
+    // Sensory text
+    fill(255, 0, 0, 80);
     text("Sensory", 20, 14);
     for (let i = 0; i < sliderSens.length; i++) {
       drawOneSlider(sliderSens[i], volSensory[i], "S" + i);
     }
 
-    // Long
-    fill(255,0,0,80);
+    // Long text
+    fill(255, 0, 0, 80);
     text("Long", width - sliderW - 20, 14);
     for (let i = 0; i < sliderLong.length; i++) {
       drawOneSlider(sliderLong[i], volLong[i], "L" + i);
@@ -339,18 +339,18 @@ function draw() {
   }
   function drawOneSlider(s, v, label) {
     // track
-    stroke(255,0,0,50);
+    stroke(255, 0, 0, 50);
     strokeWeight(3);
     line(s.x, s.y, s.x + s.w, s.y);
 
     // knob
     let kx = s.x + constrain(v, 0, 5) * s.w;
     noStroke();
-    fill(255,0,0,80);
+    fill(255, 0, 0, 80);
     circle(kx, s.y, 3);
 
     // label + value
-    fill(255,0,0,80);
+    fill(255, 0, 0, 80);
     noStroke();
     text(label + " " + nf(constrain(v, 0, 1), 1, 2), s.x + s.w + 10, s.y + 4);
   }
