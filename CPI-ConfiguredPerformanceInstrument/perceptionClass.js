@@ -4,14 +4,14 @@ class perception {
     this.velocity = p5.Vector.random2D();
     this.acceleration = createVector(-1, 0);
     this.img = img;
-    this.size = random(100,400);
-    this.maxspeed = random(5,20);
+    this.size = random(70, 130);
+    this.maxspeed = random(100);
     this.maxforce = 0.05; // steering force
     this.r = size / 3; // radius for separation
 
     //makign a trail
     this.history = [];
-    this.maxHistory = random(0,20); // trail length
+    this.maxHistory = random(40); // trail length
   }
 
   applyForce(force) {
@@ -55,7 +55,7 @@ class perception {
       this.history.shift();
     }
   }
-  
+
   // Display perception object
   display() {
     // Draw trail first
@@ -88,4 +88,3 @@ class perception {
     if (this.position.y > height + this.r) this.position.y = -this.r;
   }
 }
-

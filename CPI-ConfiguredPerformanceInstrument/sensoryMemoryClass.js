@@ -7,7 +7,7 @@ class sensoryMemory {
 
     this.img = img;
     this.sound = sound;
-    this.size = size;
+    this.size = random(100,250);
 
     this.started = false; // prevents repeated loop calls
 

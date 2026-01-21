@@ -16,8 +16,9 @@ let volSensory = []; // length 12
 let volLong = []; // length 4
 
 // -------------------- Canavs Reverb Reverse --------------------
-let zoneReverb = { x: 0, y: 0, r: 250 };
-let zoneReverse = { x: 0, y: 0, r: 180 };
+let zoneReverb = { x: 0, y: 0, r: 600 };
+let zoneReverse = { x: 0, y: 0, r: 600 };
+// let zoneMute   = { x: 0, y: 0, r: 120 }; 
 
 let SHOW_ZONES = true;
 
@@ -146,13 +147,14 @@ function setup() {
   reverb = new p5.Reverb();
   reverb.set(REVERB_TIME, REVERB_DECAY);
   reverb.drywet(REVERB_WET);
+  
   // placing circles of reverb and reverse
-  zoneReverb.x = width / 2;
-  zoneReverb.y = height / 2;
+  zoneReverb.x = width / 8;
+  zoneReverb.y = height / 8;
 
   // placing circles of reverb and reverse
   zoneReverse.x = width / 2;
-  zoneReverse.y = height / 2;
+  zoneReverse.y = height / 1;
 
   // create sensoryMemory objects
   for (let i = 0; i < imageFileSensoryMemory.length; i++) {
@@ -194,15 +196,15 @@ function setup() {
   for (let i = 0; i < longMemoryArray.length; i++) volLong[i] = 1.0; //vol
 
   // create perception objects
-  // for (let i = 0; i < imagePerception.length; i++) {
-  //   let perc = new perception(
-  //     random(width),
-  //     random(height),
-  //     imagePerception[i],
-  //     random(80, 300)
-  //   );
-  //   perceptionsArray.push(perc);
-  // }
+  for (let i = 0; i < imagePerception.length; i++) {
+    let perc = new perception(
+      random(width),
+      random(height),
+      imagePerception[i],
+      random(80, 300)
+    );
+    perceptionsArray.push(perc);
+  }
 
   // manual volume sensoryMemory
   volSensory[0] = 0;
@@ -256,6 +258,7 @@ function setup() {
 
 // -------------------- Draw --------------------
 function draw() {
+
   // background(255);
   image(backgroundImage, 0, 0, width, height);
 
@@ -300,14 +303,14 @@ function draw() {
     push();
     noFill();
     noStroke();
-    // strokeWeight(3);
+    strokeWeight(0.5);
 
-    // stroke(0, 200, 255, 160); // reverb
+    stroke(0, 200, 255, 160); // reverb
     // fill(0, 200, 255, 15);
     circle(zoneReverb.x, zoneReverb.y, zoneReverb.r * 2);
 
-    // stroke(255, 100, 0, 160); // reverse
-    // noFill();
+    stroke(255, 100, 0, 160); // reverse
+    noFill();
     // fill(255, 100, 0, 15);
     circle(zoneReverse.x, zoneReverse.y, zoneReverse.r * 2);
 
