@@ -5,7 +5,7 @@ class longMemory {
 
     this.img = img;
     this.sound = sound;
-    this.size = random(100,200);
+    this.size = size;
 
     // Track objects already toggled during current contact
     this.touchedObjects = new Set();

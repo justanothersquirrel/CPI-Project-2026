@@ -18,7 +18,7 @@ let volLong = []; // length 4
 // -------------------- Canavs Reverb Reverse --------------------
 let zoneReverb = { x: 0, y: 0, r: 600 };
 let zoneReverse = { x: 0, y: 0, r: 600 };
-// let zoneMute   = { x: 0, y: 0, r: 120 }; 
+// let zoneMute   = { x: 0, y: 0, r: 120 };
 
 let SHOW_ZONES = true;
 
@@ -147,7 +147,7 @@ function setup() {
   reverb = new p5.Reverb();
   reverb.set(REVERB_TIME, REVERB_DECAY);
   reverb.drywet(REVERB_WET);
-  
+
   // placing circles of reverb and reverse
   zoneReverb.x = width / 8;
   zoneReverb.y = height / 8;
@@ -166,8 +166,8 @@ function setup() {
     let sens = new sensoryMemory(
       random(width),
       random(height),
-      random(-2, 2),
-      random(-2, 2),
+      random(-1, 1),
+      random(-1, 1),
       imageSensoryMemory[i],
       audioSensoryMemory[i],
       120,
@@ -201,7 +201,7 @@ function setup() {
       random(width),
       random(height),
       imagePerception[i],
-      random(80, 300)
+      random(80, 300),
     );
     perceptionsArray.push(perc);
   }
@@ -258,7 +258,6 @@ function setup() {
 
 // -------------------- Draw --------------------
 function draw() {
-
   // background(255);
   image(backgroundImage, 0, 0, width, height);
 
@@ -307,12 +306,12 @@ function draw() {
 
     stroke(0, 200, 255, 160); // reverb
     // fill(0, 200, 255, 15);
-    circle(zoneReverb.x, zoneReverb.y, zoneReverb.r * 2);
+    // circle(zoneReverb.x, zoneReverb.y, zoneReverb.r * 2);
 
     stroke(255, 100, 0, 160); // reverse
     noFill();
     // fill(255, 100, 0, 15);
-    circle(zoneReverse.x, zoneReverse.y, zoneReverse.r * 2);
+    // circle(zoneReverse.x, zoneReverse.y, zoneReverse.r * 2);
 
     pop();
   }

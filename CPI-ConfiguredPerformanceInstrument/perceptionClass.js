@@ -4,14 +4,14 @@ class perception {
     this.velocity = p5.Vector.random2D();
     this.acceleration = createVector(-1, 0);
     this.img = img;
-    this.size = random(70, 130);
-    this.maxspeed = random(100);
+    this.size = random(90, 200);
+    this.maxspeed = 20;
     this.maxforce = 0.05; // steering force
     this.r = size / 3; // radius for separation
 
     //makign a trail
     this.history = [];
-    this.maxHistory = random(40); // trail length
+    this.maxHistory = 20; // trail length
   }
 
   applyForce(force) {
