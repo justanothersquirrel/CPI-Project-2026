@@ -259,7 +259,7 @@ function setup() {
 // -------------------- Draw --------------------
 function draw() {
   // background(255);
-  image(backgroundImage, 0, 0, width, height);
+  // image(backgroundImage, 0, 0, width, height);
 
   // sensoryMemory objects calling
   for (let sens of sensoryMemoryArray) {
