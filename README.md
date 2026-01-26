@@ -47,12 +47,69 @@ VS code with live server
 headphones or speakers 
 
 ## Screenshots / Media
-
+![alt text](image-2.png)
+![alt text](image-1.png)
 
 ## Credits / Acknowledgements
-*Who made it, references.*
-##License
-*What license is it made under, if any?* 
+
+this project was made by Aous
+
+**References**
+
+p5.js Core Documentation
+p5.js (n.d.) p5.js Reference. Available at: https://p5js.org/reference/ (Accessed: 11 January 2026).
+p5.js (n.d.) Object-Oriented Programming. Available at: https://p5js.org/learn/object-oriented-programming.html (Accessed: 11 January 2026).
+p5.js (n.d.) Objects and Classes Example. Available at: https://p5js.org/examples/objects-objects.html (Accessed: 11 January 2026).
+p5.js (n.d.) Preload and Assets. Available at: https://p5js.org/examples/structure-preload.html (Accessed: 11 January 2026).
+p5.js (n.d.) p5.Vector Reference. Available at: https://p5js.org/reference/#/p5.Vector (Accessed: 11 January 2026).
+p5.js (n.d.) loadImage(). Available at: https://p5js.org/reference/#/p5/loadImage (Accessed: 11 January 2026).
+
+p5.sound Library
+p5.js (n.d.) p5.SoundFile. Available at: https://p5js.org/reference/#/p5.SoundFile (Accessed: 11 January 2026).
+p5.js (n.d.) p5.Reverb. Available at: https://p5js.org/reference/#/p5.Reverb (Accessed: 11 January 2026).
+p5.js (n.d.) reverseBuffer(). Available at: https://p5js.org/reference/#/p5.SoundFile/reverseBuffer (Accessed: 11 January 2026).
+p5.js (n.d.) userStartAudio(). Available at: https://p5js.org/reference/#/p5/userStartAudio (Accessed: 11 January 2026).
+p5.js (n.d.) Sound Playback Example. Available at: https://p5js.org/examples/sound-play-song.html (Accessed: 11 January 2026).
+
+Interaction & User Interface
+p5.js (n.d.) mousePressed(). Available at: https://p5js.org/reference/#/p5/mousePressed (Accessed: 11 January 2026).
+p5.js (n.d.) mouseDragged(). Available at: https://p5js.org/reference/#/p5/mouseDragged (Accessed: 11 January 2026).
+p5.js (n.d.) createSlider(). Available at: https://p5js.org/reference/#/p5/createSlider (Accessed: 11 January 2026).
+W3Schools (n.d.) HTML Range Slider. Available at: https://www.w3schools.com/howto/howto_js_rangeslider.asp (Accessed: 11 January 2026).
+
+Nature of Code
+Shiffman, D. (2012) The Nature of Code. Available at: https://natureofcode.com/ (Accessed: 11 January 2026).
+Shiffman, D. (n.d.) Vectors. Available at: https://natureofcode.com/vectors/ (Accessed: 11 January 2026).
+Shiffman, D. (n.d.) Autonomous Agents. Available at: https://natureofcode.com/autonomous-agents/ (Accessed: 11 January 2026).
+Shiffman, D. (n.d.) Separation Behaviour Example. Available at: https://natureofcode.com/autonomous-agents/#example-59-separation (Accessed: 11 January 2026).
+
+The Coding Train
+Shiffman, D. (n.d.) Objects and Images. Available at: https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/7-arrays/8-objects-images (Accessed: 11 January 2026).
+Shiffman, D. (n.d.) Loading and Playing Sound. Available at: https://thecodingtrain.com/tracks/sound/sound/1-loading-and-playing (Accessed: 11 January 2026).
+
+YouTube Tutorials
+YouTube (n.d.) Object-Oriented Programming in p5.js. Available at: https://www.youtube.com/watch?v=8j0UDiN7my4 (Accessed: 11 January 2026).
+YouTube (n.d.) Sound in p5.js. Available at: https://www.youtube.com/watch?v=1OJj0xL8RCM (Accessed: 11 January 2026).
+YouTube (n.d.) p5.js Playlist. Available at: https://www.youtube.com/watch?v=vqE8DMfOajk (Accessed: 11 January 2026).
+
+p5.js Editor Sketches (Code References)
+p5.js Editor (n.d.) Sound: Manipulate Sound. Available at: https://editor.p5js.org/p5/sketches/Sound:_Manipulate_Sound (Accessed: 11 January 2026).
+p5.js Editor (n.d.) Example Sketch. Available at: https://editor.p5js.org/dhhepting/sketches/SCw1qcWnK (Accessed: 11 January 2026).
+
+JavaScript & Debugging
+MDN Web Docs (n.d.) JavaScript Reference. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/ (Accessed: 11 January 2026).
+MDN Web Docs (n.d.) Cannot Access Property Error. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Cant_access_property (Accessed: 11 January 2026).
+MDN Web Docs (n.d.) Redeclared Parameter Error. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter (Accessed: 11 January 2026).
+
+Local Server & Deployment
+p5.js Wiki (n.d.) Local Server. Available at: https://github.com/processing/p5.js/wiki/Local-server (Accessed: 11 January 2026).
+
+Audio Theory & Research
+MDN Web Docs (n.d.) Web Audio API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API (Accessed: 11 January 2026).
+Sound on Sound (n.d.) Spatial Audio Primer. Available at: https://www.soundonsound.com/techniques/spatial-audio-primer (Accessed: 11 January 2026).
+Oxford University Press (n.d.) Sound and Media Studies. Available at: https://academic.oup.com/edited-volume/35433/chapter/303234434 (Accessed: 11 January 2026).
 
 ## Contact / Links
-*GitHub repo link, website, demo URL.*
+aous.stb@gmail.com
+www.houseaous.com
+
